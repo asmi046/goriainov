@@ -11,9 +11,9 @@
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:description" content="@yield('description')" />
     <meta property="og:url" content="{{route('home')}}" />
-    <meta property="og:site_name" content="Мир туризма 46" />
-    <meta property="og:image" content="{{asset('img/og_img.jpg')}}" />
-    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:site_name" content="Адвокат - Дмитрий Горяинов" />
+    <meta property="og:image" content="{{asset('img/og_img.webp')}}" />
+    <meta property="og:image:type" content="image/webp" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon256.png')}}" sizes="256x256">
