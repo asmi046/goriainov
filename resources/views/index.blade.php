@@ -11,7 +11,7 @@
 @section('main')
 
 <div class="zagl_wrapper">
-    <img src="{{ asset('img/logo.webp') }}" alt="{{ $title }}">
+    <img src="{{ asset('img/logo.svg') }}" alt="{{ $title }}">
 </div>
 
 @endsection
