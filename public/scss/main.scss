@@ -41,6 +41,7 @@ section{
         margin: auto;
         opacity: 0;
         animation: 5s show ease;
+        animation-fill-mode: forwards;
     }
 
     @keyframes show {
