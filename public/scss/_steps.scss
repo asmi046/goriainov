@@ -1,0 +1,99 @@
+
+.steps_wrapper {
+    display: flex;
+    position:  relative;
+    gap: 40px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+
+    .line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        z-index: 1;
+        top:40px;
+        background-color: $main_color;
+    }
+    .step:first-child {
+        margin-left: 40px;
+    }
+    .step {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 300px;
+        z-index: 10;
+        .icon {
+            width: 85px;
+            height: 85px;
+            background-image: url('../img/icons/colon.svg');
+            background-repeat: no-repeat;
+            background-color: white;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .number {
+            display: flex;
+            gap:20px;
+            margin-top: 20px;
+            margin-left: 10px;
+            .ch {
+                font-size: 68px;
+                font-family: "Lato Thin";
+                color: $main_color;
+                line-height: 1;
+            }
+
+            p {
+                font-size: 46px;
+                font-weight: 600;
+                margin-top: auto;
+                margin-bottom: 5px;
+            }
+
+        }
+        .caption {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .steps_wrapper {
+        flex-direction: column;
+
+        .step {
+            margin-left: 40px;
+            max-width: unset;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .steps_wrapper .step,
+    .steps_wrapper .step:first-child {
+        margin-left: 20px;
+    }
+
+    .steps_wrapper {
+        .line {
+            top:20px;
+        }
+        .step {
+            .icon {
+                width: 55px;
+                height: 55px;
+            }
+            .number {
+                .ch {
+                    font-size: 48px;
+                }
+                p {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}

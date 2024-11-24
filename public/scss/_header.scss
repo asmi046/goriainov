@@ -1,3 +1,137 @@
 header{
-    
+    background-color:  $gray_bg_color;
+    min-height: 750px;
+
+    a{
+        color: white;
+    }
+
+    .top_menu {
+        margin: auto;
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    .banner_info {
+        height: auto;
+        position:relative;
+        padding: 20px 0;
+        display: flex;
+
+
+        .text_blk {
+            font-size: 65px;
+            font-weight: bold;
+            line-height: 1.1;
+            position: absolute;
+            top:20%;
+        }
+
+
+        .main_trip {
+            display: flex;
+            gap:30px;
+            margin-left: auto;
+            justify-content: end;
+            .tr {
+                max-width: 260px;
+                width: 27%;
+                max-height: 637px;
+                display: flex;
+                margin-top: auto;
+                margin-bottom: auto;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            }
+
+            .t2 {
+                max-height: 706px;
+            }
+        }
+    }
+
+}
+
+.top_head {
+    display: flex;
+    justify-content: space-between;
+
+    .top_contacts {
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+
+}
+
+
+@media (max-width:1024px) {
+    header {
+        min-height: 650px;
+        .banner_info {
+            .text_blk {
+                font-size: 52px;
+            }
+
+            .main_trip .tr {
+                width:20%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        min-height: 500px;
+        .top_menu {
+            display: none;
+        }
+        .banner_info {
+            padding: 40px 0 20px 0;
+            .text_blk {
+                font-size: 42px;
+            }
+
+            .main_trip .tr {
+                width:16%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .top_head {
+        .logo {
+            width:120px
+        }
+
+        .top_contacts {
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
+
+    header .banner_info {
+        flex-direction: column;
+
+        .main_trip {
+            gap:20px;
+            .tr {
+                width: 30%;
+            }
+
+        }
+
+        .text_blk {
+            position: relative;
+            font-size: 32px;
+            .button {
+                margin: 20px 0;
+            }
+        }
+    }
 }

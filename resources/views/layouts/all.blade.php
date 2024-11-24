@@ -30,8 +30,6 @@
         'resources/js/app.js',
         'public/scss/main.scss'
     ])
-</head>
-<body>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
@@ -51,8 +49,14 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/98258450" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
+</head>
+<body>
+    <x-menues.side-menu></x-menues.side-menu>
+    @include("allicon")
+
     <main id="main">
         @yield('main')
     </main>
+    <x-footer></x-footer>
 </body>
 </html>

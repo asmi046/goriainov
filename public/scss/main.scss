@@ -7,25 +7,39 @@
 @import "standart";
 @import "form/all-form";
 @import "elements/all-elements";
-
+@import "burger-icon";
 
 body{
     font-family: $main_fonts;
     font-size: 16px;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 header,
 footer,
 section{
     width: 100%;
-    padding-top: $section_space;
-    padding-bottom: $section_space;
+
 }
 
 .container{
     width:100%;
     max-width: $conteiner_max_w;
     margin: 0 auto;
+    padding-top: $section_space;
+    padding-bottom: $section_space;
+}
+
+.left_line {
+    .container {
+        border-left: 1px solid $main_color;
+    }
+
 }
 
 .zagl_wrapper {
@@ -50,8 +64,34 @@ section{
       }
 }
 
-// Схема с сайдбаром
-// @import "sidebar-schem";
+.white_text {
+    color:white;
+}
 
-// Боковое беню
-// @import "menues";
+
+.social {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+    .sprite_icon {
+        width:20px;
+        height: 20px;
+        fill:white
+    }
+
+}
+
+@media (max-width:1440px) {
+    .container {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@import "header";
+@import "about";
+@import "steps";
+@import "menues";
+@import "footer";
+
