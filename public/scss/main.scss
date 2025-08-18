@@ -89,6 +89,24 @@ section{
     }
 }
 
+.h2_with_line {
+
+    font-weight: bold;
+    font-size: 48px;
+    margin-left: 50px;
+    position:relative;
+
+    &:before {
+        content: "";
+        width:40px;
+        height: 2px;
+        background-color: $main_color;
+        position:absolute;
+        top: 50%;
+        left:-50px;
+    }
+}
+
 @import "header";
 @import "about";
 @import "steps";

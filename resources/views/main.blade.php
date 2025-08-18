@@ -57,9 +57,9 @@
 <section class="about left_line">
     <div class="container">
         <div class="about_main">
-            <div class="photo">
+            {{-- <div class="photo">
                 <img src="{{ asset('img/about.jpg') }}" alt="{{ config('contacts.sitename') }}">
-            </div>
+            </div> --}}
             <div class="text text_styles">
                 <h2>Дмитрий Горяинов</h2>
                 <h3>Адвокат</h3>
@@ -77,8 +77,8 @@
 
 <section class="steps left_line">
     <div class="container">
+        <h2 class="h2_with_line">Как я работаю:</h2>
         <div class="steps_wrapper">
-
             <div class="step">
                 <div class="icon"></div>
                 <div class="number">
@@ -114,6 +114,12 @@
 
             <div class="line"></div>
         </div>
+    </div>
+</section>
+
+<section class="services left_line">
+    <div class="container">
+        <h2 class="h2_with_line">Услуги:</h2>
     </div>
 </section>
 
