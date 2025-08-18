@@ -16,6 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('title')->comment('Заголовок');
             $table->string('sub_title')->comment('Подзаголовок');
+            $table->integer('order')->default(0)->comment('Порядок сортировки');
             $table->string('slug')->unique()->comment('Слаг');
             $table->string('template')->nullable()->comment('Имя шаблона');
             $table->string('img', 800)->nullable()->comment('Картинка услуги');

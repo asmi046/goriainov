@@ -13,6 +13,7 @@ class Service extends Model
         'title',
         'sub_title',
         'slug',
+        'order',
         'template',
         'img',
         'description',

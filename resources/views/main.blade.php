@@ -120,6 +120,7 @@
 <section class="services left_line">
     <div class="container">
         <h2 class="h2_with_line">Услуги:</h2>
+        <x-services-in-main></x-services-in-main>
     </div>
 </section>
 
