@@ -1,0 +1,112 @@
+.contacts_section {
+    .container {
+        border-top: 1px solid $main_color;
+        position: relative;
+
+        .icon {
+            width: 85px;
+            height: 85px;
+            position: absolute;
+            top: -40px;
+            left: calc(50% - 42.5px);
+            background-image: url(http://127.0.0.1:5173/public/img/icons/colon.svg);
+            background-repeat: no-repeat;
+            background-color: white;
+            background-position: center;
+            background-size: contain;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contacts__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .person {
+                font-size: 32px;
+                font-family: "Lato Thin";
+                margin-bottom: 20px;
+            }
+
+            .phone {
+                font-size: 22px;
+                font-family: "Lato Thin";
+                margin-bottom: 10px;
+                color: $main_color;
+            }
+
+            .mail {
+                color: $main_color;
+                margin-bottom: 10px;
+            }
+
+            .social_button {
+                margin: 0 0 20px 0;
+                gap: 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .contacts_section {
+        .container {
+            .icon {
+                width: 65px;
+                height: 65px;
+                top: -30px;
+                left: calc(50% - 32.5px);
+            }
+
+            .contacts__info {
+                .person {
+                    font-size: 24px;
+                }
+                .phone {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts_section {
+        .container {
+            .icon {
+                width: 48px;
+                height: 48px;
+                top: -20px;
+                left: calc(50% - 24px);
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts_section {
+        .container {
+
+
+
+            .contacts__info {
+
+
+                .social_button {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+            }
+        }
+    }
+}

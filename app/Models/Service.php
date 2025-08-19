@@ -16,6 +16,7 @@ class Service extends Model
         'order',
         'template',
         'img',
+        'icon',
         'description',
         'sections'
     ];

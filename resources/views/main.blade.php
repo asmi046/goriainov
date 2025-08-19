@@ -117,10 +117,29 @@
     </div>
 </section>
 
-<section class="services left_line">
+<section class="services_section left_line">
     <div class="container">
         <h2 class="h2_with_line">Услуги:</h2>
         <x-services-in-main></x-services-in-main>
+    </div>
+</section>
+
+<section class="contacts_section">
+    <div class="container">
+        <div class="icon"></div>
+        <h2>Контакты</h2>
+
+        <div class="contacts__info">
+            <p class="person">Дмитрий Горяинов</p>
+            <a href="tel:+7{{ phone_format(config('contacts.phone')) }}" class="phone">{{ config('contacts.phone') }}</a>
+            <div class="social_button">
+                <a href="#" class="button button-white">Написать в WhatsApp</a>
+                <a href="#" class="button button-white">Написать в Telegram</a>
+            </div>
+
+            <a class="mail" href="mailto:dim02061989@yandex.ru">dim02061989@yandex.ru</a>
+            <p class="adr">г. Курск ул. Павлуновског д. 48а</p>
+        </div>
     </div>
 </section>
 

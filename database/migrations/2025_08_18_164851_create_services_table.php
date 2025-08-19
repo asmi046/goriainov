@@ -19,9 +19,10 @@ return new class extends Migration
             $table->integer('order')->default(0)->comment('Порядок сортировки');
             $table->string('slug')->unique()->comment('Слаг');
             $table->string('template')->nullable()->comment('Имя шаблона');
+            $table->string('icon', 800)->nullable()->comment('Иконка услуги');
             $table->string('img', 800)->nullable()->comment('Картинка услуги');
             $table->longText('description')->nullable()->comment('Описание услуги');
-            $table->json('sections')->nullable()->comment('Информациф по секциям');
+            $table->json('sections')->nullable()->comment('Информация по секциям');
         });
     }
 
