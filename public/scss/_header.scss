@@ -2,6 +2,10 @@ header{
     background-color:  $gray_bg_color;
     min-height: 750px;
 
+    &.main_header_page {
+        min-height: unset;
+    }
+
     a{
         color: white;
     }

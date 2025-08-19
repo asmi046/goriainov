@@ -56,7 +56,8 @@
 
     <main id="main">
         @yield('main')
+        <x-footer></x-footer>
     </main>
-    <x-footer></x-footer>
+
 </body>
 </html>
