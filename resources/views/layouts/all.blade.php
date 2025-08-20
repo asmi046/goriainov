@@ -55,5 +55,12 @@
     <x-menues.side-menu></x-menues.side-menu>
     @endif
 
+    <div class="modal_win" id="modal_app">
+        <cookies-warning
+            privacy-policy-link="{{ route('page', 'politika-v-oblasti-obrabotki-personalnyx-dannyx') }}"
+            cookies-info-link="{{ route('page', 'o-failax-cookie') }}"
+            privacy-policy-accept-link="{{ route('page', 'soglasie-na-obrabotku-personalnyx-dannyx') }}"
+        />
+    </div>
 </body>
 </html>

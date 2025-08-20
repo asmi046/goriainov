@@ -74,7 +74,7 @@ header{
 
 @media (max-width:1024px) {
     header {
-        min-height: 650px;
+        min-height: auto;
         .banner_info {
             .text_blk {
                 font-size: 52px;
@@ -90,7 +90,6 @@ header{
 
 @media (max-width: 768px) {
     header {
-        min-height: 500px;
         .top_menu {
             display: none;
         }

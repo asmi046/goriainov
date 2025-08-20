@@ -9,9 +9,13 @@
         </div>
         <div class="col">
             <nav class="footer_navigation">
-                <ul>
-                    <x-menu-puncts></x-menu-puncts>
-                </ul>
+                    <x-menues.puncts></x-menues.puncts>
+            </nav>
+        </div>
+
+        <div class="col">
+            <nav class="footer_navigation">
+                    <x-menues.puncts name="Меню в подвале"></x-menues.puncts>
             </nav>
         </div>
         <div class="col f_contacts">

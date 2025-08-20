@@ -44,40 +44,28 @@ class MenuSeeder extends Seeder
 
         DB::table("menus")->insert($data);
 
-        // $footer_menu = [
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'О компании',
-        //         'order' => 1,
-        //         'lnk' => "#",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'Цены',
-        //         'order' => 2,
-        //         'lnk' => "/price",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'Сваи',
-        //         'order' => 3,
-        //         'lnk' => "'/products",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'Галерея',
-        //         'order' => 4,
-        //         'lnk' => "#",
-        //     ],
-        //     [
-        //         'menu_name' => 'Меню в подвале',
-        //         'title' => 'FAQ',
-        //         'order' => 7,
-        //         'lnk' => "/faq",
-        //     ],
-        // ];
+        $footer_menu = [
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Политика конфиденциальности',
+                'order' => 1,
+                'lnk' => "/page/politika-v-oblasti-obrabotki-personalnyx-dannyx",
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Согласие на обработку персональных данных',
+                'order' => 2,
+                'lnk' => "/page/soglasie-na-obrabotku-personalnyx-dannyx",
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'О файлах Cookie',
+                'order' => 3,
+                'lnk' => "/page/o-failax-cookie",
+            ],
+        ];
 
-        // DB::table("menus")->insert($footer_menu);
+        DB::table("menus")->insert($footer_menu);
 
 
         // $footer_menu_2 = [

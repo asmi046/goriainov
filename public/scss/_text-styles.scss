@@ -41,4 +41,40 @@
         border-radius: 2px;
         background-color: $main_color;
     }
+
+    blockquote {
+        position: relative;
+        margin: 32px 0;
+        padding: 32px 32px 32px 48px;
+        background: linear-gradient(90deg, rgba($main_color,0.08) 0%, rgba($main_color,0.02) 100%);
+        border-left: 6px solid $main_color;
+        font-size: 1.25em;
+        font-style: italic;
+        color: $main_color;
+        box-shadow: 0 2px 16px rgba($main_color, 0.07);
+        transition: background 0.3s;
+
+        &::before {
+            content: "\201C";
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            font-size: 3em;
+            color: $main_color;
+            opacity: 0.55;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        cite {
+            display: block;
+            margin-top: 18px;
+            font-size: 0.95em;
+            font-style: normal;
+            text-align: right;
+        }
+    }
+
+
+
 }
