@@ -1,4 +1,4 @@
-	<a href="#" class="services__item">
+	<a href="{{ route('services_page', $item->slug) }}" class="services__item">
 		<div class="icon_wrapper">
             <img class="services__item-image" src="{{ Storage::url($item->icon) }}" alt="{{ $item->title }}" />
         </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -11,7 +12,7 @@ class ServiceController extends Controller
     }
 
     public function page($slug) {
-        $data = Product::where('slug', $slug)->firstOrFail();
+        $data = Service::where('slug', $slug)->firstOrFail();
 
         $template = $data->template?$data->template:'default';
 
