@@ -4,8 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3008e5a1fd538aee045a5c63f03e2f42",
+    "content-hash": "b316d2775b4ceb0debf820d2bc96a26f",
     "packages": [
+        {
+            "name": "asmi046/site_skelet",
+            "version": "1.0.42",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asmi046/site_skelet.git",
+                "reference": "1a23dea9c732009c9b9e4d0eb1e49fe85f7dd74c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asmi046/site_skelet/zipball/1a23dea9c732009c9b9e4d0eb1e49fe85f7dd74c",
+                "reference": "1a23dea9c732009c9b9e4d0eb1e49fe85f7dd74c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asmi046\\SiteSkelet\\Providers\\SkiletServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asmi046\\SiteSkelet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "asmi046",
+                    "email": "asmi046@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/asmi046/site_skelet/issues",
+                "source": "https://github.com/asmi046/site_skelet/tree/1.0.42"
+            },
+            "time": "2025-08-04T12:24:31+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -5919,52 +5965,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "asmi046/site_skelet",
-            "version": "1.0.42",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asmi046/site_skelet.git",
-                "reference": "1a23dea9c732009c9b9e4d0eb1e49fe85f7dd74c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asmi046/site_skelet/zipball/1a23dea9c732009c9b9e4d0eb1e49fe85f7dd74c",
-                "reference": "1a23dea9c732009c9b9e4d0eb1e49fe85f7dd74c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Asmi046\\SiteSkelet\\Providers\\SkiletServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Asmi046\\SiteSkelet\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "asmi046",
-                    "email": "asmi046@gmail.com"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/asmi046/site_skelet/issues",
-                "source": "https://github.com/asmi046/site_skelet/tree/1.0.42"
-            },
-            "time": "2025-08-04T12:24:31+00:00"
-        },
         {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
