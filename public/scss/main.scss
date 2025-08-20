@@ -122,6 +122,14 @@ section{
     }
 }
 
+.map_in_page {
+    width:98%;
+    min-height: 300px;
+    border: 1px solid $main_color;
+    border-radius: $border_rad;
+    overflow: hidden;
+}
+
 @import "header";
 @import "about";
 @import "steps";

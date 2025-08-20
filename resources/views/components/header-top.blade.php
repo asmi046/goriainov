@@ -1,5 +1,5 @@
 <div class="top_head">
-    <a href="" class="logo">
+    <a href="{{ route('home') }}" class="logo">
         <img src="{{ asset('img/logo_top.svg') }}" alt=" {{ config('contacts.sitename') }}">
     </a>
     <nav class="top_menu">
