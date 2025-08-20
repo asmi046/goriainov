@@ -4,7 +4,7 @@
     </a>
     <nav class="top_menu">
         <ul>
-            <x-menu-puncts></x-menu-puncts>
+            <x-menues.puncts></x-menues.puncts>
         </ul>
     </nav>
     <div class="top_contacts">

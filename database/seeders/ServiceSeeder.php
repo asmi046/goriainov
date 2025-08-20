@@ -26,6 +26,7 @@ class ServiceSeeder extends Seeder
                 'sub_title' => "Увеличьте шансы на победу!",
                 'slug' => Str::slug("Представительство в арбитражных судах"),
                 'icon' => "services/arb.svg",
+                'description' => file_get_contents(public_path('tmp_data/service/arb.html')),
             ],
 
             [
@@ -33,6 +34,7 @@ class ServiceSeeder extends Seeder
                 'sub_title' => "Банкротство — не конец, а инструмент. Используйте его правильно!",
                 'slug' => Str::slug("Представительство в банкротстве"),
                 'icon' => "services/bankr.svg",
+                'description' => file_get_contents(public_path('tmp_data/service/bankr.html')),
             ],
 
             [
@@ -40,6 +42,7 @@ class ServiceSeeder extends Seeder
                 'sub_title' => "Корпоративные конфликты — это война без выстрелов. Доверьте защиту профессионалам!",
                 'slug' => Str::slug("Представительство в корпоративных спорах"),
                 'icon' => "services/corp.svg",
+                'description' => file_get_contents(public_path('tmp_data/service/corp.html')),
             ],
         ];
 

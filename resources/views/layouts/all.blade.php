@@ -41,13 +41,19 @@
 
 </head>
 <body>
-    <x-menues.side-menu></x-menues.side-menu>
+
     @include("allicon")
 
     <main id="main">
         @yield('main')
-        <x-footer></x-footer>
+        @if (!Request::is('/'))
+            <x-footer></x-footer>
+        @endif
     </main>
+
+    @if (!Request::is('/'))
+    <x-menues.side-menu></x-menues.side-menu>
+    @endif
 
 </body>
 </html>
